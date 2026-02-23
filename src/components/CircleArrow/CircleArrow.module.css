@@ -1,0 +1,21 @@
+.circle {
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%; flex-shrink: 0;
+  transition: transform var(--duration-normal) var(--ease-out-expo), background-color var(--duration-normal) var(--ease-out-quart), border-color var(--duration-normal) var(--ease-out-quart);
+}
+.sm { width: 48px; height: 48px; }
+.md { width: 80px; height: 80px; }
+.lg { width: 120px; height: 120px; }
+
+.filled { background-color: var(--color-text-on-dark); color: var(--color-bg-dark); }
+.filled:hover { background-color: var(--color-accent); transform: scale(1.08); }
+
+.outlined { background-color: transparent; border: 1.5px solid var(--color-text-primary); color: var(--color-text-primary); }
+.outlined:hover { border-color: var(--color-accent); color: var(--color-accent); transform: scale(1.08); }
+
+.onDark.outlined { border-color: var(--color-text-on-dark); color: var(--color-text-on-dark); }
+.onDark.outlined:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.onDark.filled { background-color: var(--color-text-on-dark); color: var(--color-bg-dark); }
+
+.arrow { width: 40%; height: 40%; transition: transform var(--duration-normal) var(--ease-out-expo); }
+.circle:hover .arrow { transform: translate(2px, -2px); }

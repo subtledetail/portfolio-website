@@ -1,0 +1,109 @@
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-15: 120px;
+  --space-20: 160px;
+  --space-30: 240px;
+
+  --grid-columns: 5;
+  --grid-gutter: 24px;
+  --grid-margin: clamp(16px, 4vw, 64px);
+  --grid-line-color: rgba(255, 255, 255, 0.28);
+  --grid-line-color-light: rgba(0, 0, 0, 0.08);
+
+  --color-bg-dark: #0A0A0A;
+  --color-bg-light: #F5F5F3;
+  --color-bg-hero: #E8E4DF;
+
+  --color-text-primary: #222222;
+  --color-text-secondary: #6B6B6B;
+  --color-text-tertiary: #999999;
+  --color-text-on-dark: #E8E8E8;
+  --color-text-on-dark-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-on-dark-tertiary: rgba(255, 255, 255, 0.4);
+
+  --color-accent: #F2EB26;
+  --color-accent-80: rgba(242, 235, 38, 0.8);
+  --color-selection: rgba(242, 235, 38, 0.8);
+
+  --color-project-1: #E84D2F;
+  --color-project-2: #1B7B5A;
+  --color-project-3: #1A3A5C;
+  --color-project-4: #2C2C2C;
+
+  --type-display-size: clamp(64px, 10vw, 160px);
+  --type-display-lh: 0.9;
+  --type-display-weight: 800;
+  --type-display-tracking: -0.03em;
+
+  --type-h1-size: clamp(32px, 5vw, 72px);
+  --type-h1-lh: 1.1;
+  --type-h1-weight: 600;
+  --type-h1-tracking: -0.02em;
+
+  --type-h2-size: clamp(24px, 3vw, 40px);
+  --type-h2-lh: 1.2;
+  --type-h2-weight: 600;
+  --type-h2-tracking: -0.01em;
+
+  --type-h3-size: 20px;
+  --type-h3-lh: 32px;
+  --type-h3-weight: 500;
+
+  --type-body-size: 16px;
+  --type-body-lh: 24px;
+  --type-body-weight: 400;
+
+  --type-caption-size: 13px;
+  --type-caption-lh: 16px;
+  --type-caption-weight: 400;
+
+  --type-mono-size: 13px;
+  --type-mono-lh: 16px;
+  --type-mono-weight: 400;
+
+  --type-nav-size: 14px;
+  --type-nav-lh: 24px;
+  --type-nav-weight: 500;
+  --type-nav-tracking: 0.08em;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+  --duration-reveal: 1200ms;
+
+  --z-grid: 1;
+  --z-content: 2;
+  --z-nav: 100;
+  --z-splash: 1000;
+
+  --nav-height: 80px;
+  --max-width: 1920px;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --grid-columns: 4;
+    --grid-gutter: 20px;
+    --nav-height: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --grid-columns: 2;
+    --grid-gutter: 16px;
+    --nav-height: 56px;
+  }
+}

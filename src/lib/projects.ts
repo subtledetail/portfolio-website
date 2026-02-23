@@ -1,0 +1,58 @@
+import type { ProjectData } from '@/components/ProjectCard/ProjectCard';
+
+export const projects: ProjectData[] = [
+  {
+    slug: 'yeti-brand-launch',
+    title: 'Launching a Stellar Brand to a New Product Category',
+    description: 'Led the design strategy and product experience for a premium brand entering an entirely new market segment.',
+    client: 'Yeti Build',
+    category: 'Brand Strategy · Product Design',
+    accentColor: '#E84D2F',
+    mediaColor: '#C84424',
+  },
+  {
+    slug: 'allways-permanent-collection',
+    title: 'Reimagining a Permanent Collection — Designing with Heritage and Launching a New Digital Experience',
+    description: 'Created an immersive digital platform that honors legacy while embracing modern interaction patterns.',
+    client: 'Always Permanent',
+    category: 'UX Strategy · Digital Product',
+    accentColor: '#1B7B5A',
+    mediaColor: '#166B4D',
+  },
+  {
+    slug: 'first-republic-mobile',
+    title: "Leading First Republic's Mobile App Redesign with a Unified Design System",
+    description: 'Established a comprehensive design system and led the mobile banking experience redesign.',
+    client: 'First Republic Bank',
+    category: 'Design Systems · Mobile',
+    accentColor: '#1A3A5C',
+    mediaColor: '#15304D',
+  },
+  {
+    slug: 'clover-city',
+    title: "Leading Clover City's UI/UX Design, Overseeing a Full-Scale System Redesign",
+    description: 'Directed the complete platform redesign, establishing new patterns for complex data workflows.',
+    client: 'Clover',
+    category: 'UX Direction · Systems Design',
+    accentColor: '#2C2C2C',
+    mediaColor: '#1a1a1a',
+  },
+  {
+    slug: 'galaxy-digital-mvp',
+    title: 'Facilitating Knowledge Management — MVP and Expansion',
+    description: 'Designed the MVP for an internal knowledge platform, then scaled it across the organization.',
+    client: 'Galaxy Digital',
+    category: 'Product Design · Knowledge Systems',
+    accentColor: '#1A1A3A',
+    mediaColor: '#12122a',
+  },
+  {
+    slug: 'roku-streaming',
+    title: 'Delivering a Peer-to-Peer Streaming Experience — Billions of Impressions',
+    description: 'Built streaming interfaces that scale to billions of daily interactions with zero-compromise performance.',
+    client: 'Roku Media',
+    category: 'Streaming · Scale Design',
+    accentColor: '#3A1A3A',
+    mediaColor: '#2a122a',
+  },
+];

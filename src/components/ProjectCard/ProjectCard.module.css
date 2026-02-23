@@ -1,0 +1,69 @@
+.card { position: relative; overflow: hidden; }
+
+.link { display: grid; grid-template-columns: 3fr 1fr; text-decoration: none; color: inherit; min-height: 360px; }
+
+.media {
+  position: relative; overflow: hidden; background-color: var(--media-bg);
+  min-height: 360px; display: flex; align-items: center; justify-content: center;
+}
+
+.index {
+  font-size: clamp(64px,8vw,120px); font-weight: 800;
+  color: rgba(255,255,255,0.06); letter-spacing: -0.03em;
+}
+
+.overlay {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background-color: rgba(0,0,0,0);
+  transition: background-color var(--duration-normal) var(--ease-out-quart);
+}
+.card:hover .overlay { background-color: rgba(0,0,0,0.45); }
+
+.overlayText {
+  font-size: var(--type-caption-size); font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: #FFF;
+  opacity: 0; transform: translateY(8px);
+  transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo);
+}
+.card:hover .overlayText { opacity: 1; transform: translateY(0); }
+
+.info {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: var(--space-4); background-color: var(--color-bg-dark);
+}
+
+.category {
+  font-size: var(--type-caption-size); line-height: var(--type-caption-lh);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--color-text-on-dark-tertiary); margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: var(--type-h3-size); line-height: var(--type-h3-lh); font-weight: var(--type-h3-weight);
+  color: var(--color-text-on-dark); margin-bottom: var(--space-1); letter-spacing: -0.01em;
+}
+
+.description {
+  font-size: var(--type-caption-size); line-height: var(--type-caption-lh);
+  color: var(--color-text-on-dark-secondary); margin-bottom: var(--space-3);
+}
+
+.client {
+  font-size: var(--type-mono-size); font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--color-text-on-dark-tertiary); margin-top: auto;
+}
+
+.wide .link { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+.wide .media { min-height: 480px; }
+
+@media (max-width: 1023px) {
+  .link { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+  .media { min-height: 280px; }
+}
+
+@media (max-width: 767px) {
+  .media { min-height: 220px; }
+  .info { padding: var(--space-2) var(--space-3); }
+}
