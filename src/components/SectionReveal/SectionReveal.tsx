@@ -5,6 +5,10 @@ import { useRef, useEffect, useState, type ReactNode } from 'react';
 interface SectionRevealProps {
   children: ReactNode;
   className?: string;
+  direction?: string;
+  distance?: number;
+  stagger?: number;
+  triggerOffset?: string;
 }
 
 export default function SectionReveal({
